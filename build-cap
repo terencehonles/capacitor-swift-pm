@@ -47,7 +47,7 @@ create_xcframeworks() {
 
 }
 
-git clone https://github.com/ionic-team/capacitor capacitor-checkout
+test -d capacitor-checkout || git clone https://github.com/ionic-team/capacitor capacitor-checkout
 cd capacitor-checkout/ios/Capacitor
 git checkout $1
 
